@@ -1,0 +1,343 @@
+{
+  "version": "2.0",
+  "prompts": [
+    {
+      "id": "minimal-lineart",
+      "name": "极简线条风",
+      "template": "a minimalistic line art of a [SUBJECT], illustrated in 2D flat vector style. [LINE_COLOR] outline only on a [BG_COLOR] background. No shadows, no details. Simplified shape, clean curves, and modern, abstract styling.",
+      "slots": [
+        "SUBJECT",
+        "LINE_COLOR",
+        "BG_COLOR"
+      ],
+      "tags": [
+        "物品",
+        "动物",
+        "符号",
+        "极简",
+        "线稿",
+        "logo",
+        "icon",
+        "轮廓",
+        "平面矢量",
+        "几何",
+        "留白"
+      ],
+      "suitable_for": "适合画单一物品/动物/抽象符号的纯单色轮廓线条，没有填充、没有阴影，极几何极克制，适合做 logo、icon、贴纸、装饰元素。输入需要主体 + 线条颜色 + 背景色。不适合多元素场景、人物表情、需要质感氛围的画面。",
+      "family": "极简线条",
+      "folder": "styles/01-minimal-lineart",
+      "demos": [
+        "styles/01-minimal-lineart/demo-1.png",
+        "styles/01-minimal-lineart/demo-2.png",
+        "styles/01-minimal-lineart/demo-3.png"
+      ]
+    },
+    {
+      "id": "continuous-line",
+      "name": "一笔画连续线条风",
+      "template": "A minimalist continuous line drawing of a [SUBJECT], illustrated in clean 2D flat vector style. Single continuous [LINE_COLOR] outline on a pure white background. No fills, no shadows, no textures, no unnecessary details. Simplified silhouette, smooth flowing curves, elegant proportions, modern abstract aesthetic, clean negative space, minimalist logo-inspired design.",
+      "slots": [
+        "SUBJECT",
+        "LINE_COLOR"
+      ],
+      "tags": [
+        "物品",
+        "动物",
+        "人脸",
+        "侧脸",
+        "一笔画",
+        "连续线条",
+        "极简",
+        "线稿",
+        "艺术",
+        "流畅",
+        "品牌插画",
+        "海报",
+        "封面",
+        "咖啡馆",
+        "生活方式",
+        "留白",
+        "装饰"
+      ],
+      "suitable_for": "适合画单一主体的一笔画风格连续线条插画，线条不断、流畅优雅，有手绘艺术感。特别适合人脸侧像、动物剪影、器物轮廓，用于品牌插画、生活方式海报、社媒配图、封面装饰。输入需要主体 + 线条颜色（如 black / dark blue / terracotta red）。与 minimal-lineart 的区别：minimal-lineart 是几何规整的多段线稿，本模板是一笔画艺术线条，曲线更流动更有表现力。不适合复杂多元素场景、需要填充色块或光影的画面。",
+      "family": "极简线条",
+      "folder": "styles/02-continuous-line",
+      "demos": [
+        "styles/02-continuous-line/demo-1.png",
+        "styles/02-continuous-line/demo-2.png",
+        "styles/02-continuous-line/demo-3.png"
+      ]
+    },
+    {
+      "id": "minimal-editorial",
+      "name": "极简编辑风",
+      "template": "Minimal illustration of [SUBJECT], clean thin lines with selective vibrant color accents, lots of negative space, refined composition, modern editorial style, elegant and simple",
+      "slots": [
+        "SUBJECT"
+      ],
+      "tags": [
+        "物品",
+        "动物",
+        "概念",
+        "极简",
+        "高级感",
+        "插图",
+        "封面",
+        "留白",
+        "线稿",
+        "现代"
+      ],
+      "suitable_for": "适合画单个物体、动物或抽象概念，强调留白和现代编辑感，输出干净克制。输入只需明确主体即可（一只什么 / 一个什么）。不适合复杂场景、多人物、热闹氛围。",
+      "family": "极简线条",
+      "folder": "styles/03-minimal-editorial",
+      "demos": [
+        "styles/03-minimal-editorial/demo-1.png",
+        "styles/03-minimal-editorial/demo-2.png",
+        "styles/03-minimal-editorial/demo-3.png"
+      ]
+    },
+    {
+      "id": "flat-vector-color",
+      "name": "扁平色块风",
+      "template": "a minimalistic illustration of a [SUBJECT], illustrated in 2D flat vector style. Flat color shapes in [COLOR_PALETTE] with a thin black outline on a [BG_COLOR] background. No shadows, no details. Simplified shape, clean curves, and modern, abstract styling.",
+      "slots": [
+        "SUBJECT",
+        "COLOR_PALETTE",
+        "BG_COLOR"
+      ],
+      "tags": [
+        "物品",
+        "动物",
+        "角色",
+        "扁平",
+        "色块",
+        "矢量",
+        "插画",
+        "贴纸",
+        "品牌",
+        "IP",
+        "icon"
+      ],
+      "suitable_for": "适合画扁平色块 + 细线描边的单主体，色彩鲜明边界干净，适合做品牌 IP、贴纸、icon、主视觉装饰。输入需要主体 + 配色组合（如 terracotta and mustard yellow）+ 背景色。不适合写实质感、复杂场景、需要光影氛围的画面。",
+      "family": "平面色块",
+      "folder": "styles/04-flat-vector-color",
+      "demos": [
+        "styles/04-flat-vector-color/demo-1.png",
+        "styles/04-flat-vector-color/demo-2.png",
+        "styles/04-flat-vector-color/demo-3.png"
+      ]
+    },
+    {
+      "id": "retro-woodblock",
+      "name": "复古版画风",
+      "template": "极简复古版画风插画，主体为【SUBJECT】，画面为单幅完整构图。画面采用大面积留白与极简构成，背景为米白色粗糙纸张质感（色调接近 #F5F0E6 的暖米白）。主体以深炭黑剪影呈现（接近 #1A1A1A），轮廓简洁、厚重、安静，细节极少，只保留关键形体特征。画面中加入一个芥末黄色块（色调接近 #E8A33D，沉稳的赭黄调，饱和度克制，不要亮橙色），形态从三种几何家族中选择其一：正圆、横向色带、大面积几何色面——具体形态和位置由画面语境决定，自然融入为最合理的视觉元素（光影、地平线、倒影、空间分割均可），不要默认画成太阳。色块与黑色主体形成强烈视觉对比。整体色彩严格控制在米白、炭黑、芥末黄三色以内，低复杂度、高识别度。构图强调静谧感、秩序感、思辨气质、书卷气，主体可偏小或居中，画面有大量空白，形成高级海报感、寓言感、复古书籍封面感、学术出版物的安静气质。质感层面：纸面颗粒、木刻版画压印、丝网印刷、轻微套印不准的手工感——但做旧程度轻微克制，是质感而非破损，不要脏污感。画面简洁克制，不要真实摄影感，不要3D，不要复杂背景，不要高光渲染，不要渐变过多，不要现代商业矢量感。无文字，无水印，无logo。",
+      "slots": [
+        "SUBJECT"
+      ],
+      "slot_guide": {
+        "SUBJECT": "主体描述，三种用法：\n  具象物：直接写（一只鹤站在浅水中 / 一座灯塔矗立在海岸悬崖边）。\n  抽象概念：先转译成视觉隐喻再写入。常用词典：周期→钟摆/潮汐波浪，认知→三棱镜折出光束/灯塔，积累与复利→向上的阶梯/上扬的厚重弧带，决策→分岔的路径，机会→门/钥匙，时间→沙漏/钟摆。\n  线条主体：必须版画化——线加粗成木刻弧带（写明走势，如「持续上扬、末端不放平」）；或让线成为黄色色块的起伏边缘；或作为黑色剪影的轮廓线（如山脊线）。纯细线撑不起画面，不要用。\n  注意：模型倾向自动补黑色具象物压画面，要纯抽象几何构成时需在主体描述里显式写「不要出现任何具象物体」。"
+      },
+      "tags": [
+        "物品",
+        "动物",
+        "人物",
+        "风景",
+        "概念",
+        "隐喻",
+        "复古",
+        "版画",
+        "木刻",
+        "剪影",
+        "黄黑",
+        "芥末黄",
+        "海报",
+        "封面",
+        "公众号头图",
+        "知识",
+        "静谧",
+        "思辨",
+        "书卷气",
+        "留白",
+        "纸质感"
+      ],
+      "suitable_for": "适合画单主体的复古版画风插画：米白/炭黑/芥末黄三色锁定（#F5F0E6 / #1A1A1A / #E8A33D），黑色剪影 + 黄色几何色块（圆/横带/色面三选一）的签名式对比，做旧轻微克制，气质静谧思辨、书卷气。特别适合知识类公众号配图、封面、海报——系列产出的色彩和构图语言统一。主体支持具象物、抽象概念（先转译隐喻，见 slot_guide）、版画化线条三类。不适合多色、写实、复杂多人物场景、需要文字排版的画面。",
+      "family": "平面色块",
+      "folder": "styles/05-retro-woodblock",
+      "demos": [
+        "styles/05-retro-woodblock/demo-1.png",
+        "styles/05-retro-woodblock/demo-2.png",
+        "styles/05-retro-woodblock/demo-3.png"
+      ]
+    },
+    {
+      "id": "gemma-correll-quirky",
+      "name": "Gemma Correll 手绘风",
+      "template": "A simple illustration of a [SUBJECT] in [OUTFIT], [ACTION], with a [EXPRESSION] expression, in the style of Gemma Correll, playful hand-drawn linework, quirky character design, minimal detail, expressive posture, clean white background, charming editorial illustration feel",
+      "slots": [
+        "SUBJECT",
+        "OUTFIT",
+        "ACTION",
+        "EXPRESSION"
+      ],
+      "tags": [
+        "人物",
+        "角色",
+        "动物",
+        "动作",
+        "情绪",
+        "俏皮",
+        "幽默",
+        "手绘",
+        "卡通",
+        "插图",
+        "头像"
+      ],
+      "suitable_for": "适合画人物 / 角色 / 拟人动物在做某件事，带服装、动作、表情描述，风格俏皮幽默有手绘感。输入越完整越好（角色 + 在干什么 + 什么情绪 + 穿什么），缺也能跑。不适合静物、抽象概念、严肃正式场景。",
+      "family": "卡通手绘",
+      "folder": "styles/06-gemma-correll-quirky",
+      "demos": [
+        "styles/06-gemma-correll-quirky/demo-1.png",
+        "styles/06-gemma-correll-quirky/demo-2.png",
+        "styles/06-gemma-correll-quirky/demo-3.png"
+      ]
+    },
+    {
+      "id": "notion-editorial",
+      "name": "Notion 编辑风",
+      "template": "A simple black-and-white illustration of a [SUBJECT] in [OUTFIT], [ACTION], with a [EXPRESSION] expression, in a Notion-style minimalist editorial aesthetic, clean line art, flat monochrome design, simple shapes, subtle hand-drawn feel, minimal detail, expressive posture, clean white background, neat modern layout, soft playful character style.",
+      "slots": [
+        "SUBJECT",
+        "OUTFIT",
+        "ACTION",
+        "EXPRESSION"
+      ],
+      "tags": [
+        "人物",
+        "角色",
+        "动物",
+        "黑白",
+        "线稿",
+        "扁平",
+        "Notion",
+        "编辑风",
+        "手绘感",
+        "职场",
+        "办公",
+        "产品",
+        "官网",
+        "Marketing",
+        "现代",
+        "留白",
+        "穿搭",
+        "表情"
+      ],
+      "suitable_for": "适合画角色（人/动物/拟人）穿什么、在做什么、什么表情的黑白编辑插画，柔和俏皮但克制现代，特别适合 Notion / Slack / Linear 风格的产品页、官网、文档、Marketing 配图。输入越完整越好（主体 + 服装 + 动作 + 表情），缺也能跑，模型会自动补合理默认。不适合彩色、复杂场景、写实质感、需要氛围光影的画面。",
+      "family": "卡通手绘",
+      "folder": "styles/07-notion-editorial",
+      "demos": [
+        "styles/07-notion-editorial/demo-1.png",
+        "styles/07-notion-editorial/demo-2.png",
+        "styles/07-notion-editorial/demo-3.png"
+      ]
+    },
+    {
+      "id": "pencil-minimal-abstract",
+      "name": "铅笔极简抽象风",
+      "template": "create the most minimal abstract representation of this through the medium of a terrible pencil drawing (clean, new white paper)",
+      "slots": [],
+      "tags": [
+        "图生图",
+        "铅笔",
+        "素描",
+        "极简",
+        "抽象",
+        "笨拙",
+        "白纸",
+        "手绘",
+        "文艺",
+        "概念",
+        "海报",
+        "克制"
+      ],
+      "suitable_for": "图生图专用，把参考图剥到最简，用业余感的铅笔素描重新呈现概念骨架，抹掉细节和色彩。气质笨拙但克制，文艺向，适合品牌视觉、概念海报、产品页装饰、艺术氛围配图。必须配参考图，否则跑不了。不适合纯文生图、写实质感、彩色场景，也不适合 messy-scribble 那种「故意丑/玩梗」的整活基调。",
+      "family": "素描 / 涂鸦",
+      "folder": "styles/08-pencil-minimal-abstract",
+      "demos": [
+        "styles/08-pencil-minimal-abstract/demo-1.png",
+        "styles/08-pencil-minimal-abstract/demo-2.png",
+        "styles/08-pencil-minimal-abstract/demo-3.png"
+      ]
+    },
+    {
+      "id": "messy-scribble",
+      "name": "胡乱涂鸦风",
+      "template": "Please redraw the attached image in the most inept, messy, scribble style possible, with a completely pathetic vibe. Use a white background to make it look like it was drawn with a mouse in MS Paint. Sort of make it resemble the original, but actually not really, with an awkward misalignment that kinda sorta matches but confuses you, emphasizing that low-quality pixel-by-pixel feel, and really highlighting the utterly idiotic clumsiness. Wait, hold on, whatever, do it however you want.",
+      "slots": [],
+      "tags": [
+        "重绘",
+        "图生图",
+        "反讽",
+        "搞笑",
+        "丑萌",
+        "涂鸦",
+        "MS-Paint",
+        "故意烂",
+        "整活"
+      ],
+      "suitable_for": "图生图专用，把参考图故意重画得很丑很乱很潦草，带反讽幽默感，适合整活、玩梗、表情包。必须配参考图，否则跑不了。不适合纯文生图，也不适合追求美感或正式输出的场合。",
+      "family": "素描 / 涂鸦",
+      "folder": "styles/09-messy-scribble",
+      "demos": [
+        "styles/09-messy-scribble/demo-1.png",
+        "styles/09-messy-scribble/demo-2.png",
+        "styles/09-messy-scribble/demo-3.png"
+      ]
+    },
+    {
+      "id": "oriental-thin-line-logo",
+      "name": "细线东方字形 Logo",
+      "template": "请生成一张《细线东方字形 Logo》。\n\n品牌名：【NAME】\n拼音辅助：【PINYIN】\n\n整体为极简中文字体型 Logo，白色或极浅灰白背景，大量留白。画面主体不是插画，也不是图形，而是把中文品牌名「【NAME】」本身设计成视觉标识。\n\n中文主字使用黑色细线字形，笔画修长、轻盈、克制、清冷，有现代东方感。可以对部分笔画做轻微几何化重构、拉长、断笔、错位或留白处理，但每个字必须保持清晰可读，笔画结构完整，绝对不能变成乱码或无法辨认的抽象符号。几何化是微调，不是重写——观者应该能一眼认出每个字。\n\n【LAYOUT_INSTRUCTION】\n\n整体重点是「字体即 Logo」：中文品牌名「【NAME】」本身就是主视觉。【PINYIN_INSTRUCTION】\n\n加入一个小型朱红色篆刻感印章，印章内容可以是古意风格单字，也可以是抽象古印符号。印章只做点睛，不能太大，不能抢主视觉。\n\n画面中只出现品牌名中文字、拼音字母和印章，不要出现任何其他文字、slogan、品类描述、装饰性图形或方框。\n\n整体效果要像一枚真实品牌的现代中文字体 Logo，干净、平面化、有设计感、有系列感，适合品牌提案、门头、包装、社媒头像和视觉系统延展。",
+      "slots": [
+        "NAME",
+        "PINYIN",
+        "LAYOUT_INSTRUCTION",
+        "PINYIN_INSTRUCTION"
+      ],
+      "slot_guide": {
+        "NAME": "中文品牌名，2-4 字（如：清渡、山止、半白）",
+        "PINYIN": "品牌名拼音，大写字母（如：QING DU）",
+        "LAYOUT_INSTRUCTION": "排版结构的具体描述。避免用「2×2方阵」等字面化表述，改用明确的空间描述。常用选项：\n  横排：「两个字横向并排，字间距略大于常规，形成方正沉稳的视觉重心。不要添加任何装饰性方框、网格线或占位符号。」\n  竖排：「两个字纵向竖排，上下排列，字间距适中。整体构图偏窄偏高，像一枚竖式印鉴。」\n  错位穿插：「两个字横向排列，但在垂直方向上做轻微错位——第二个字比第一个字略低或略高，形成微妙的节奏感和呼吸感，而非死板对齐。」",
+        "PINYIN_INSTRUCTION": "拼音排版位置说明。常用选项：\n  下方：「拼音 XX 放在主字下方居中，字母之间字距拉开，字号明显小于主字，保持高级、安静、克制。」\n  侧边竖排：「拼音 XX 竖排放在主字右侧，字母纵向排列，字距拉开，字号明显小于主字，保持高级、安静、克制。」\n  穿插：「拼音 XX 穿插在主字右上角或右侧，字距拉开，字号明显小于主字，保持高级、安静、克制。」"
+      },
+      "tags": [
+        "品牌",
+        "logo",
+        "中文字体",
+        "东方",
+        "细线",
+        "极简",
+        "留白",
+        "印章",
+        "茶室",
+        "香氛",
+        "器物",
+        "书店",
+        "民宿",
+        "克制",
+        "清冷",
+        "现代东方",
+        "门头",
+        "包装",
+        "头像"
+      ],
+      "suitable_for": "适合为东方气质品牌（茶室/花器/陶艺/书店/香氛/器物/民宿/东方生活方式）生成中文字体型 Logo。输入需要品牌名（2-4 字中文）+ 拼音 + 排版结构描述 + 拼音位置说明。产出是「字体即 Logo」的极简标识，带朱红印章点睛。不适合英文品牌、插画型 Logo、图形符号型 Logo、多色彩 Logo。",
+      "family": "字体设计",
+      "folder": "styles/10-oriental-thin-line-logo",
+      "demos": [
+        "styles/10-oriental-thin-line-logo/demo-1.png",
+        "styles/10-oriental-thin-line-logo/demo-2.png",
+        "styles/10-oriental-thin-line-logo/demo-3.png"
+      ]
+    }
+  ]
+}
